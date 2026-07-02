@@ -165,7 +165,7 @@
 \newcommand{\emailb}{gowtham5.gr15@gmail.com}
 \newcommand{\github}{gowtham-creator}
 \newcommand{\website}{https://example.com/}
-\newcommand{\linkedin}{GowthamReddy}
+\newcommand{\linkedin}{gowtham-reddy-nayini}
 \newcommand{\location}[]{}
 
 \begin{document}
@@ -179,7 +179,7 @@
 \begin{tabularx}{\linewidth}{L r}
   \textbf{\LARGE \name} & +91-\phone \\
   \course & \href{mailto:\emailb}{\emailb} \\
-  Computer Science and Engineering & \href{https://www.linkedin.com/in/gowtham-reddy-821aa41b3/}{linkedin.com/in/\linkedin} \\
+  Computer Science and Engineering & \href{https://www.linkedin.com/in/gowtham-reddy-nayini-821aa41b3/}{linkedin.com/in/\linkedin} \\
   Institute of Aeronautical Engineering, Hyderabad & \href{https://github.com/gowtham-creator}{github.com/\github} \\
 \end{tabularx}
 }
@@ -295,6 +295,17 @@
 \resumeItemListEnd
 
 \resumeProject
+{LogicGen (Cubixso) --- AI Policy-to-Rules Decision Engine}
+{FastAPI, LangChain, Ollama (Mistral 7B), pgvector, Next.js 16, DMN/Drools, Docker}
+{Feb 2025 - Mar 2026}
+{}
+\resumeItemListStart
+\item Built an \textbf{agentic LLM} system that turns long policy documents (e.g. FICO-based credit-underwriting rules) into executable \textbf{DMN} and \textbf{Drools} decision logic: ingest $\rightarrow$ \textbf{RAG} (Postgres + pgvector) $\rightarrow$ rule extraction with source provenance $\rightarrow$ 9-type ambiguity detection $\rightarrow$ human-in-the-loop review $\rightarrow$ code generation.
+\item Ran a fully \textbf{local LLM} (\textbf{Mistral 7B} via \textbf{Ollama}, with Azure OpenAI / Claude fallbacks) behind a 4-stage DMN pipeline with per-stage XSD validation and retry --- \textbf{100\%} of generated DMN passes engine validation at \textbf{$\geq$90\%} rule-extraction coverage.
+\item Shipped it as a \textbf{multi-tenant SaaS} --- \textbf{Next.js 16 + React 19} UI with an in-browser KIE/Drools DMN editor on a \textbf{Node.js / Express + TypeScript} backend (PostgreSQL, Redis/BullMQ, SSO \& RBAC).
+\resumeItemListEnd
+
+\resumeProject
 {Nutri Greenz --- Farm-to-Table E-Commerce Platform}
 {Next.js 16, React 19, TypeScript, Supabase, Firebase Auth, Tailwind, Vercel}
 {Apr 2026 - Present}
@@ -349,15 +360,6 @@
 {}
 \resumeItemListStart
 \item Built a cross-platform community app (social feeds, groups, events, video) in \textbf{Flutter} with \textbf{Firebase} (Auth, Firestore, Cloud Functions, FCM) and \textbf{Razorpay} payments.
-\resumeItemListEnd
-
-\resumeProject
-{DMN Model Generation with LLMs}
-{Streamlit, LlamaIndex, Python, LLaMA 2}
-{Sep 2024 - Jan 2025}
-{}
-\resumeItemListStart
-\item Built a tool that generates \textbf{DMN} models, decision tables and XML from business-rule documents and Excel at \textbf{95\%} validation accuracy using \textbf{LlamaIndex} and \textbf{LLaMA 2}.
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
